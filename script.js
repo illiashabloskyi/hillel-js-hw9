@@ -79,10 +79,22 @@ const elem = users.reduce(function (accumulator, x) {
     const remove = arr2.splice(1, 1);
     const num = Number(arr2.join(""));
     // if (num > 2000){
-      return [...accumulator, num]
+    //   return [...accumulator, num]
     // }
+    return [...accumulator, x.phone]
 }, [])
 
-console.log(elem);
+// console.log(elem);
 
-// const elem = users.reduce((acc, x) => {}, [])
+// const elem = users.reduce((acc, x) => {
+//   const str = x.balance;
+//   const arr2 = str.slice(1).split("");
+//   const remove = arr2.splice(1, 1);
+//   const num = Number(arr2.join(""));
+//   // if (num > 2000){
+//   //   return [...acc, x.phone]
+//   // }
+//   return [...acc, x.phone];
+// }, []);
+
+console.log(elem);
